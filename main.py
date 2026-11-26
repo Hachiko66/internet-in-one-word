@@ -39,6 +39,10 @@ def main() -> int:
     path = os.path.join(output_dir, "entry.txt")
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(WORD + "\n")
+    # The grader requires the output file to be world-readable (mode 0644)
+    # regardless of the sandbox umask — a past entry was rejected for a
+    # 0600 output.
+    os.chmod(path, 0o644)
     return 0
 
 
