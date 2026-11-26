@@ -4,27 +4,30 @@
 Writes a single word describing the whole internet to
 $MAKEFUN_OUTPUT_DIR/entry.txt.
 
-The word is "Lurking". The internet's oldest law is 90-9-1: for every
-person who posts, nine comment and ninety only watch. Billions of people
-spend their days reading other people's arguments, photos and lives in
-complete silence — never liking, never replying, never revealing they
-were ever there. The whole internet is one vast room where almost
-everyone is quietly lurking. It is funny on its own, true of the entire
-internet rather than any one site, and not the first word anyone reaches
-for. Pass --reason to print the pitch instead of writing the entry.
+The word is "Doomscrolling". It names the signature behaviour of the
+modern internet: thumbing an endless feed long past the point of wanting
+to, pulled from one bad headline to the next by an algorithm that never
+runs out of worse news. Billions of people end every day the same way —
+in bed, in the dark, scrolling. Unlike reading or watching, doomscrolling
+is a behaviour the internet itself invented: no newspaper or television
+ever offered an infinite feed of dread. It is specific to the internet (no feed,
+no doomscroll), true of the whole internet rather than any one site, and
+not the first word anyone reaches for. Pass --reason to print the pitch
+instead of writing the entry.
 """
 
 import argparse
 import os
 import sys
 
-WORD = "Lurking"
+WORD = "Doomscrolling"
 
 REASON = (
-    "Ninety percent of the internet never posts, never comments, never "
-    "likes — they just watch. Billions of silent readers in one loud room. "
-    "The internet isn't a conversation; it's everybody lurking, all day, "
-    "in every tab."
+    "Every app on the internet is an infinite feed, and every feed is "
+    "designed to keep a thumb moving. Doomscrolling is what the whole "
+    "internet is for now: not searching, not reading, just scrolling "
+    "through an endless stream of alarming headlines until 2 a.m. It is "
+    "the one behaviour every corner of the internet shares."
 )
 
 # The sealed gate: entry.txt must be UTF-8 text of 1 to 30 characters,
